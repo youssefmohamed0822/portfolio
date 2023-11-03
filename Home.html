@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Fira+Sans:wght@300;400;500;600;700;900&family=Mukta:wght@200;400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <title>JOO</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <h1 class="logo animate__animated animate__flipInX animate__slower">
+          <a href="#" class="logo" style="font-size: 30px; color: white"
+            >JOO </a
+          >
+        </h1>
+        <div class="humbrger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <ul class="nav-menu animate__animated animate__flipInX animate__slower">
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link"
+              style="color: white"
+              onclick="showAbout()"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link"
+              style="color: white"
+              onclick="showResume()"
+              >Resume</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link"
+              style="color: white"
+              onclick="showPortofolio()"
+              >Portofolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link"
+              style="color: white"
+              onclick="showContact()"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="main">
+      <div class="social">
+        <div class="btn-container">
+          <div class="expandable-button">
+            <div class="fill-block"></div>
+            <div class="close-icon">
+              <div class="fas fa-times"></div>
+            </div>
+            <a class="expansion-item" href="https://twitter.com">
+              <div class="expansion-content">
+                <div class="icon fab fa-twitter"></div>
+                <div class="text">Twitter</div>
+              </div></a
+            ><a class="expansion-item" href="https://codepen.io">
+              <div class="expansion-content">
+                <div class="icon fab fa-codepen"></div>
+                <div class="text">Codepen</div>
+              </div></a
+            ><a class="expansion-item" href="#">
+              <div class="expansion-content">
+                <div class="icon fas fa-globe"></div>
+                <div class="text">Website</div>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+      <video
+        class="video"
+        src="css/images/pexels_videos_4577 (2160p).mp4"
+        muted
+        autoplay
+        loop
+      ></video>
+      <div class="center">
+        <span is="type-async" id="type-text">...</span>
+        <span class="blinking-cursor">_</span>
+      </div>
+    </section>
+    <div class="about">
+      <i class="fa-solid fa-xmark i-close" onclick="closeAbout()"></i>
+      <img class="pop" src="css/images/Untitled-1.png" alt="" />
+      <div class="container">
+        <div class="sec-1">
+          <div class="main-title">
+            <h1 id="titleAbout">About Me</h1>
+            <div class="bar"></div>
+          </div>
+          <div class="content">
+            <img src="css/images/1.png" />
+            <div class="info">
+              <h4 class="title">Who I'am?</h4>
+              <h2 class="top-p">
+                 UI/UX Design and Graphic Designer ;
+              </h2>
+              <p class="bottom-p">
+                based in the Egypt and i have been building noteworthy UX/UI designs
+                 and websites for years, which comply with the latest design trends. I help convert a 
+                 vision and an idea into meaningful and useful products. Having a sharp eye for product evolution 
+                 helps me prioritize tasks, iterate fast and deliver faster.
+              </p>
+              <hr
+                style="
+                  width: 100%;
+                  background-color: #777;
+                  height: 1px;
+                  border: none;
+                "
+              />
+              <div class="info-contact">
+                <div>
+                  <p class="info-p">
+                    Name : <span class="info-answer">Youssef Mohammed</span>
+                  </p>
+                  <p class="info-p">
+                    Age : <span class="info-answer">25</span>
+                  </p>
+                </div>
+                <div>
+                  <p class="info-p">
+                    Email :
+                    <span
+                      class="info-answer"
+                      style="color: var(--secondry-color)"
+                      >youssefmohamed0822@gmail.com</span
+                    >
+                  </p>
+                  <p class="info-p">
+                    From : <span class="info-answer">Egypt</span>
+                  </p>
+                </div>
+              </div>
+              <div class="social-contact">
+                <button class="butt">Download CV</button>
+                <div class="social-icon">
+                  <a href="https://www.facebook.com/yousef.pop.5815?locale=ar_AR" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                   <a href="https://x.com/Yousef08560090?t=U9j3QDabPIeF-0ZUyNXL3w&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.linkedin.com/in/yousef-mohamed-1b484a288/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="https://www.instagram.com/yousefpo0p/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  <!-- https://www.linkedin.com/in/yousef-mohamed-1b484a288/ -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sec-2">
+          <div class="main-title">
+            <h1>My Services</h1>
+            <div class="bar"></div>
+          </div>
+          <div class="card-container"></div>
+        </div>
+        <div class="sec-3">
+          <div class="container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="test">
+                    <div class="test-head">
+                      <div class="left">
+                        <img src="css/images/myPhoto.png" alt="" />
+                        <div class="title">
+                          <p>Youssef Mohammed</p>
+                          <p>Graphic Designer</p>
+                        </div>
+                      </div>
+                      <i class="fa-solid fa-paragraph"></i>
+                    </div>
+                    <div class="test-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Tenetur saepe animi eius, omnis nostrum eum! Eius
+                        officia asperiores ea at in a, iste culpa ipsam illo
+                        numquam expedita itaque perferendis
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="test">
+                    <div class="test-head">
+                      <div class="left">
+                        <img src="css/images/client-1.jpg" alt="" />
+                        <div class="title">
+                          <p>Ideal</p>
+                          <p>CEO</p>
+                        </div>
+                      </div>
+                      <i class="fa-solid fa-paragraph"></i>
+                    </div>
+                    <div class="test-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Tenetur saepe animi eius, omnis nostrum eum! Eius
+                        officia asperiores ea at in a, iste culpa ipsam illo
+                        numquam expedita itaque perferendis
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="test">
+                    <div class="test-head">
+                      <div class="left">
+                        <img src="css/images/client-3.jpg" alt="" />
+                        <div class="title">
+                          <p>Nansy</p>
+                          <p>Front End Developer</p>
+                        </div>
+                      </div>
+                      <i class="fa-solid fa-paragraph"></i>
+                    </div>
+                    <div class="test-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Tenetur saepe animi eius, omnis nostrum eum! Eius
+                        officia asperiores ea at in a, iste culpa ipsam illo
+                        numquam expedita itaque perferendis
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sec-4">
+          <div class="main-title">
+            <h1>Plans</h1>
+            <div class="bar"></div>
+          </div>
+          <div class="plan-container"></div>
+        </div>
+      </div>
+    </div>
+    <div class="resume">
+      <i class="fa-solid fa-xmark i-close" onclick="closeResume()"></i>
+      <img class="pop" src="css/images/Untitled-1.png" alt="" />
+      <div class="container">
+        <div class="main-title">
+          <h1>Resume</h1>
+          <div class="bar"></div>
+        </div>
+        <div class="sec-1">
+          <div class="left-div">
+            <div class="box">
+              <h3>Computer Science</h3>
+              <span>Cairo University / 2018 - 2022</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+                quo repudiandaex
+              </p>
+            </div>
+            <div class="box">
+              <h3>Bachelor Degree</h3>
+              <span>Cairo University / 2018 - 2022</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+                quo repudiandae
+              </p>
+            </div>
+            <div class="box">
+              <h3>ACP ADOBE</h3>
+              <span>ACP CENTER / 2020 - 2021</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+                quo repudiandae
+              </p>
+            </div>
+          </div>
+          <div class="right-div">
+            <div class="box">
+              <h3>Video Editor</h3>
+              <span>Adobe lightroom 2020 - 2021</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+                quo repudiandae
+              </p>
+            </div>
+            <div class="box">
+              <h3>photo Edite</h3>
+              <span>ACP CENTER / 2020 - 2021</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+                quo repudiandae
+              </p>
+            </div>
+            <div class="box">
+              <h3>UI/UX Designer</h3>
+              <span>Cambridge University / 2004 - 2007</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+                quo repudiandae
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="sec-2">
+          <div class="content">
+            <div class="left-div">
+              <div class="progress">
+                <h1 class="progress-title">Logo Design</h1>
+                <div class="progress-bar">
+                  <span data-width="100%"></span>
+                </div>
+              </div>
+              <div class="progress">
+                <h1 class="progress-title">Social Media</h1>
+                <div class="progress-bar">
+                  <span data-width="90%"></span>
+                </div>
+              </div>
+              <div class="progress">
+                <h1 class="progress-title">Invtition Card</h1>
+                <div class="progress-bar">
+                  <span data-width="100%"></span>
+                </div>
+              </div>
+            </div>
+            <div class="right-div">
+              <div class="progress">
+                <h1 class="progress-title">Adope Photoshop</h1>
+                <div class="progress-bar">
+                  <span data-width="85%"></span>
+                </div>
+              </div>
+              <div class="progress">
+                <h1 class="progress-title">In Design</h1>
+                <div class="progress-bar">
+                  <span data-width="85%"></span>
+                </div>
+              </div>
+              <div class="progress">
+                <h1 class="progress-title">Edite photo</h1>
+                <div class="progress-bar">
+                  <span data-width="100%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sec-3">
+          <div class="content">
+            <div class="text">
+              <h1>Take a tour of my office</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aperiam, harum dicta perspiciatis eveniet labore delectus
+                deleniti eaque maiores laboriosam placeat ullam consectetur, in
+                hic. Illo, cupiditate doloremque? Facilis, voluptatum quasi?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aperiam, harum dicta perspiciatis eveniet labore delectus
+                deleniti eaque maiores laboriosam placeat ullam consectetur, in
+                hic. Illo, cupiditate doloremque? Facilis, voluptatum quasi?
+              </p>
+            </div>
+            <div class="right">
+              <img src="css/images/res.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portofolio">
+      <i class="fa-solid fa-xmark i-close" onclick="closePortofolio()"></i>
+      <img class="pop" src="css/images/Untitled-1.png" alt="" />
+      <div class="container">
+        <div class="main-title">
+          <h1>Portofolio</h1>
+          <div class="bar"></div>
+        </div>
+        <div class="gallery">
+          <ul class="gallery-heading">
+            <li class="active">All</li>
+            <li>Brand</li>
+            <li>Design</li>
+            <li>Photos</li>
+          </ul>
+          <div class="products">
+            <div class="blur"></div>
+            <img class="image" src="css/images/p1.webp" data-filter="brand" />
+            <div class="blur"></div>
+            <img class="image" src="css/images/p2.webp" data-filter="brand" />
+            <div class="blur"></div>
+            <img class="image" src="css/images/p3.webp" data-filter="design" />
+            <div class="blur"></div>
+            <img class="image" src="css/images/p4.webp" data-filter="design" />
+            <div class="blur"></div>
+            <img class="image" src="css/images/p5.webp" data-filter="photos" />
+            <div class="blur"></div>
+            <img class="image" src="css/images/p6.webp" data-filter="photos" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="store">
+
+
+      <div class="container">
+        <div class="main-title">
+          <h1>Our Stor</h1>
+          <div class="bar"></div>
+        </div>
+        <div class="content">
+          <div class="products"></div>
+          <div class="cart"></div>
+        </div>
+      </div>
+    </div> -->
+    <div class="contact">
+      <i class="fa-solid fa-xmark i-close" onclick="closeContact()"></i>
+      <img class="pop" src="css/images/Untitled-1.png" alt="" />
+      <div class="container">
+        <div class="main-title">
+          <h1 class="animate__animated animate__fadeInUp">Get in Touch</h1>
+          <div class="bar"></div>
+        </div>
+        <div class="content">
+          <div class="left-div">
+            <h1 style="color: var(--main-color)">Message Me</h1>
+            <form>
+              <input class="user-input name type="text" placeholder="Name" />
+              <input
+                class="user-input email"
+                type="email"
+                placeholder="Email"
+              />
+              <input class="user-input" type="text" placeholder="Subject" />
+              <textarea
+                class="user-input"
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <input class="user-sub" type="submit" />
+            </form>
+          </div>
+          <div class="right-div">
+            <h1>Contact Info</h1>
+            <p>
+              Always available for freelance work if the right project comes
+              along, Feel free to contact me!
+            </p>
+            <div class="bottom-info">
+              <div class="bottom-social">
+                <i class="fa-solid fa-circle-user"></i>
+                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-paper-plane"></i>
+              </div>
+              <div class="info-social">
+                <div>
+                  <strong>Name</strong>
+                  <small>Youssef Mohammed</small>
+                </div>
+                <div>
+                  <strong>Location</strong>
+                  <small>Giza Fisal</small>
+                </div>
+                <div>
+                  <strong>Call Me</strong>
+                  <small>+201069474312</small>
+                </div>
+                <div>
+                  <strong>Email Me</strong>
+                  <small>youssefmohamed0822@gmail.com</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
